@@ -1,0 +1,94 @@
+.wrap-hat {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    z-index: 10;
+    top: 0px;
+    width: 100%;
+    position: fixed;
+    max-height: 45px;
+    height: 45px;
+    overflow: hidden;
+}
+
+header a {
+    text-decoration: none;
+    color: #78829d;
+}
+
+.hat {
+    font-family: "Proxima Nova Regular";
+    font-size: 12px;
+    line-height: 45px;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    width: calc(100% - 160px);
+    background: #2f364a;
+}
+
+.hat .icon-book {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.hat li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.hat li:last-child {
+    border-left: 3px solid #1f2635;
+    border-style: dotted;
+    padding-right: 20px;
+    display: inline
+}
+
+.hat li a:hover {
+    text-decoration: underline;
+}
+
+.user {
+    flex-direction: row;
+    display: inline-flex;
+    justify-content: space-around;
+    background: #15a4fa;
+    width: 160px;
+    font-family: "Proxima Nova Regular";
+    font-size: 12px;
+    line-height: 45px;
+    color: white
+}
+
+.avatar {
+    overflow: hidden;
+    top: 6px;
+    position: relative;
+    background: rgba(255, 255, 255, .4);
+    height: 32px;
+    width: 32px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+}
+
+.avatar :hover {
+    border: #1f2635;
+}
+
+.avatar img {
+    border-radius: 30px;
+    height: 30px;
+    width: 30px;
+}
+
+.icon-cheveron-outline-down:before {
+    position: relative;
+    top: 17px;
+    right: 10px;
+}
+
+.user span {
+    cursor: pointer;
+}

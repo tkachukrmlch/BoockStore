@@ -1,0 +1,419 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  background-size: cover;
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 1170px;
+  background-size: cover;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Light';
+  src: url("../fonts/ProximaNova-Light.eot");
+  src: url("../fonts/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url("../fonts/ProximaNova-Bold.eot");
+  src: url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+header {
+  font: 30px 'Proxima Nova';
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?4je1wb");
+  src: url("../fonts/icomoon.eot?4je1wb#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?4je1wb") format("truetype"), url("../fonts/icomoon.woff?4je1wb") format("woff"), url("..fonts/icomoon.svg?4je1wb#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon],
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-list:before {
+  content: "\e900";
+}
+
+.icon-plus:before {
+  content: "\f067";
+}
+
+.icon-question:before {
+  content: "\f128";
+}
+
+.icon-search:before {
+  content: "\f002";
+}
+
+.icon-star:before {
+  content: "\f005";
+}
+
+.icon-cog:before {
+  content: "\f013";
+}
+
+.icon-gear:before {
+  content: "\f013";
+}
+
+.icon-clock-o:before {
+  content: "\f017";
+}
+
+.icon-book:before {
+  content: "\f02d";
+}
+
+.icon-shopping-cart:before {
+  content: "\f07a";
+}
+
+.icon-angle-left:before {
+  content: "\f104";
+}
+
+.icon-angle-right:before {
+  content: "\f105";
+}
+
+.icon-angle-up:before {
+  content: "\f106";
+}
+
+.icon-angle-down:before {
+  content: "\f107";
+}
+
+.icon-question-circle-o:before {
+  content: "\f29c";
+}
+
+.icon-earth:before {
+  content: "\e901";
+}
+
+.icon-cheveron-outline-down:before {
+  content: "\e902";
+}
+
+.icon-cheveron-outline-up:before {
+  content: "\e903";
+}
+
+.wrap-hat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+header {
+  z-index: 10;
+  top: 0px;
+  width: 100%;
+  position: fixed;
+  max-height: 45px;
+  height: 45px;
+  overflow: hidden;
+}
+
+header a {
+  text-decoration: none;
+  color: #78829d;
+}
+
+.hat {
+  font: 12px/45px "Proxima Nova Regular";
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(100% - 160px);
+  background: #2f364a;
+}
+
+.hat .icon-book {
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.hat li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.hat li:last-child {
+  border-left: 3px solid #1f2635;
+  border-style: dotted;
+  padding-right: 20px;
+  display: inline;
+}
+
+.hat li a:hover {
+  text-decoration: underline;
+}
+
+.user {
+  font: 12px/45px "Proxima Nova Regular";
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  background: #15a4fa;
+  width: 160px;
+  color: white;
+}
+
+.avatar {
+  overflow: hidden;
+  top: 6px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.4);
+  height: 32px;
+  width: 32px;
+  border: 1px solid #fff;
+  border-radius: 30px;
+}
+
+.avatar :hover {
+  border: #1f2635;
+}
+
+.avatar img {
+  border-radius: 30px;
+  height: 30px;
+  width: 30px;
+}
+
+.icon-cheveron-outline-down:before {
+  position: relative;
+  top: 17px;
+  right: 10px;
+}
+
+.user span {
+  cursor: pointer;
+}
+
+.leftcol {
+  position: relative;
+  width: 200px;
+  height: 100vh;
+  float: left;
+  background: #19202e;
+}
+
+.jq-stars {
+  display: inline-block;
+}
+
+.jq-rating-label {
+  font: 22px helvetica, arial, verdana;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+}
+
+.jq-star {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.jq-star-svg {
+  padding-left: 3px;
+  width: 100%;
+  height: 100%;
+}
+
+.jq-star-svg path {
+  /* stroke: #000; */
+  stroke-linejoin: round;
+}
+
+/* un-used */
+
+.jq-shadow {
+  -webkit-filter: drop-shadow(-2px -2px 2px #888);
+  filter: drop-shadow(-2px -2px 2px #888);
+}
