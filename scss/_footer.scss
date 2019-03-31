@@ -1,0 +1,27 @@
+footer {
+    display: flex;
+    position: absolute;
+    top: 938px;
+    height: 44px;
+    width: 100%;
+    background: #181e2c;
+    justify-content: flex-end;
+    a {
+        background: #1f2637;
+        width: 55px;
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        justify-content: center;
+        transition: all 0.3s;
+        &:hover {
+            background: #15a4fa;
+        }
+        span {
+            left: 22px;
+            top: 15px;
+            position: relative;
+        }
+    }
+}
