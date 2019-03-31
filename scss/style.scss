@@ -1,6 +1,11 @@
 @import "start";
 @import "fonts";
 @import "header";
-@import "leftcol";
 @import "star-rating";
 @import "variables";
+@import "leftcol";
+@import "footer";
+@import "browse-books";
+body {
+    min-width: 200px;
+}

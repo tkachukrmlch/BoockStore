@@ -1,7 +1,126 @@
 .leftcol {
+    top: 44px;
     position: relative;
     width: 200px;
-    height: 100vh;
     float: left;
     background: #19202e;
+    margin-bottom: 44px;
+}
+
+.addbook {
+    position: relative;
+    height: 115px;
+    background: #1f2637;
+    border-bottom: 1px solid #141824;
+    a {
+        font-family: "Proxima Nova";
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 45px;
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.button-add {
+    position: relative;
+    left: calc(50% - 80px);
+    top: calc(50% - 22px);
+    display: block;
+    background: #f2795a;
+    width: 160px;
+    height: 44px;
+    border-radius: 3px;
+    transition: all 0.4s;
+    &:hover {
+        background: #e6532e;
+    }
+    .icon-plus {
+        position: relative;
+        top: 2px;
+        color: white;
+        font-size: 16px;
+        padding: 0 18px;
+    }
+}
+
+.left-menu {
+    height: 240px;
+    background: #1f2637;
+    border-bottom: 1px solid #141824;
+    border-top: 1px solid #282f41;
+    margin-top: 4px;
+}
+
+.menu-btn {
+    color: #78829d;
+    display: block;
+    @extend .base-font;
+    padding-left: 20px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 13px;
+    &:hover {
+        background: #15a4fa;
+        color: white;
+    }
+}
+
+.categories {
+    height: 180px;
+    @extend .left-menu;
+}
+
+.marker {
+    margin-top: 12px;
+    color: #e64c66;
+    padding-left: 40px;
+    list-style-type: disc;
+    li a {
+        display: inline-block;
+        width: 100%;
+        color: #78829d;
+        display: block;
+        @extend .base-font;
+        padding-left: 20px;
+        height: 38px;
+        line-height: 38px;
+        font-size: 13px;
+        padding-left: 0;
+    }
+}
+
+.history-list {
+    line-height: 18px;
+    font-size: 12px;
+    height: 347px;
+    color: #4a5268;
+    @extend .left-menu;
+    border-bottom: none;
+    div {
+        @extend .base-font;
+        padding: 37px 20px 0 20px;
+        a {
+            color: #78829d;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        p {
+            width: 139px;
+            display: inline-block;
+            span {
+                display: inline-block;
+                padding-top: 17px;
+            }
+        }
+        .icon-clock-o {
+            position: relative;
+            top: 3px;
+            float: left;
+            padding-right: 10px;
+        }
+    }
 }
